@@ -1,6 +1,6 @@
 # Description
 
-This project uses Eigenfaces, Fisherfaces and Local Binary Patterns Histograms algorithms to do face recognition amongst a set of faces. It was implemented for iOS (higher than 5.0) with OpenCV.
+This project uses Eigenfaces, Fisherfaces and Local Binary Patterns Histograms algorithms to do face recognition amongst a set of faces. It was implemented for iOS (higher than 5.0) with OpenCV.s
 You can also use this sample project to do your works with OpenCV in iOS, if you need to. If you want, you can also check how to create an iOS Project working with OpenCV down below (although you can easily reuse the sample project to do your work).
 This project was developed with Philipp Wagner's face recognition library in mind. You can find that library here: https://github.com/bytefish/libfacerec.
 
