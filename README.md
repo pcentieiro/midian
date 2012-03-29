@@ -42,9 +42,9 @@ ThirdParty/ocropus/ocr-utils
 
 11) Add the following to your .pch file:
 
----- #ifdef __cplusplus
----- #import "opencv2/opencv.hpp"
----- #endif
+   	#ifdef __cplusplus
+	#import "opencv2/opencv.hpp"
+	#endif
 
 12) Now, go to your implementation file where you are going to use OpenCV libraries, and change it to Filename.mm instead of just Filename.m. Add #import "opencv2/opencv.hpp", type a line of code (i.e. IplImage *test;) and after building, you shall notice that everything went fine, and you're now ready to run OpenCV on your iPhone!
 
