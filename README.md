@@ -9,20 +9,20 @@ This project was developed with Philipp Wagner's face recognition library in min
 1) Add a Cocoa Touch Static Library (Add Target on Project) named OpenCV-iPhone (as an example).
 2) Add the following User Header Search Paths (on Build Settings) to this new target.
 
-ThirdParty/OpenCV/include
-ThirdParty/OpenCV/modules/core/include
-ThirdParty/OpenCV/modules/flann/include
-ThirdParty/OpenCV/modules/imgproc/include
-ThirdParty/OpenCV/modules/video/include
-ThirdParty/OpenCV/modules/features2d/include
-ThirdParty/OpenCV/modules/objdetect/include
-ThirdParty/OpenCV/modules/calib3d/include
-ThirdParty/OpenCV/modules/highgui/include
-ThirdParty/OpenCV/modules/ml/include
-ThirdParty/OpenCV/modules/contrib/include
-ThirdParty/iulib
-ThirdParty/iulib-includes
-ThirdParty/ocropus/ocr-utils
+  ThirdParty/OpenCV/include
+  ThirdParty/OpenCV/modules/core/include
+  ThirdParty/OpenCV/modules/flann/include
+  ThirdParty/OpenCV/modules/imgproc/include
+  ThirdParty/OpenCV/modules/video/include
+  ThirdParty/OpenCV/modules/features2d/include
+  ThirdParty/OpenCV/modules/objdetect/include
+  ThirdParty/OpenCV/modules/calib3d/include
+  ThirdParty/OpenCV/modules/highgui/include
+  ThirdParty/OpenCV/modules/ml/include
+  ThirdParty/OpenCV/modules/contrib/include
+  ThirdParty/iulib
+  ThirdParty/iulib-includes
+  ThirdParty/ocropus/ocr-utils
 
 3) Add the files mentioned on the sample project under ThirdParty group (no need to copy). Basically all the core and imgproc files.
 
@@ -42,9 +42,9 @@ ThirdParty/ocropus/ocr-utils
 
 11) Add the following to your .pch file:
 
----- #ifdef __cplusplus
----- #import "opencv2/opencv.hpp"
----- #endif
+  #ifdef __cplusplus
+  #import "opencv2/opencv.hpp"
+  #endif
 
 12) Now, go to your implementation file where you are going to use OpenCV libraries, and change it to Filename.mm instead of just Filename.m. Add #import "opencv2/opencv.hpp", type a line of code (i.e. IplImage *test;) and after building, you shall notice that everything went fine, and you're now ready to run OpenCV on your iPhone!
 
